@@ -16,11 +16,10 @@ const Map = () => {
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 const App = () => {
-  console.log(process.env.NODE_ENV, process.env.REACT_APP_GOOGLE_MAPS);
   return (
     <div className="App">
       <WrappedMap
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS}&v=3.exp&libraries=geometry,drawing,places`}
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCTfTyzsSzVx4N5cM3K3ivhzPgyU9H8CFY&v=3.exp&libraries=geometry,drawing,places`}
         loadingElement={<div style={{ height: '100%' }} />}
         containerElement={<div style={{ height: '100%' }} />}
         mapElement={<div style={{ height: '100%' }} />}
