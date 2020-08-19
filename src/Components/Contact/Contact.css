@@ -1,0 +1,13 @@
+.map {
+  width: 400px;
+  height: 400px;
+}
+
+#Contact {
+  padding-top: 8vh;
+  height: 100vh;
+  padding: 8vh 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
