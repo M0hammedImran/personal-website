@@ -5,7 +5,7 @@ import './Projects.css';
 function Projects() {
   return (
     <div id="Projects">
-      <h1>Projects</h1>
+      <h1>Projects Section. Coming Soon.</h1>
     </div>
   );
 }

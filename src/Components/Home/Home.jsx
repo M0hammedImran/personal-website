@@ -5,7 +5,7 @@ import './Home.css';
 function Home() {
   return (
     <div id="Home">
-      <h1>Home</h1>
+      <h1>Home Section. Coming Soon.</h1>
     </div>
   );
 }
