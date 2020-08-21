@@ -5,3 +5,26 @@
   display: grid;
   place-content: center;
 }
+
+#Home > h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+#Home > h1 > span {
+  font-family: 'Amiri';
+  font-weight: 700;
+  font-style: italic;
+}
+#Home > p {
+  color: #4b4b4b;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.svg-container {
+  margin: 0 auto;
+  height: 512px;
+  width: 512px;
+  display: grid;
+  place-content: center;
+}
