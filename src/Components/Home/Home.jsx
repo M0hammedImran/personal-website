@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './Home.css';
 
 function Home() {
+  const [imranValues, setImranValues] = useState({ x: 350, y: 140 });
+  const [charcoalValues, setCharcoalValues] = useState({ x: 230, y: -40 });
+  useEffect(() => {
+    setImranValues({ x: 250, y: 90 });
+    setCharcoalValues({ x: 180, y: 40 });
+  }, []);
   return (
     <div id="Home">
       <div className="svg-container">
@@ -17,8 +23,8 @@ function Home() {
               height="350"
               width="353"
               data-rellax-speed="1"
-              y="40"
-              x="180"
+              x={charcoalValues.x}
+              y={charcoalValues.y}
               href={require('../../assets/images/dark_background.png')}
               style={{ transform: ' translate3d(0px, 0px, 0px)' }}
             ></image>
@@ -30,11 +36,10 @@ function Home() {
             ></path>
             <image
               className="rellax imran"
-              height="350"
-              // width="353"
+              height="400"
               data-rellax-speed="1"
-              y="90"
-              x="250"
+              x={imranValues.x}
+              y={imranValues.y}
               href={require('../../assets/images/my_picture.png')}
               style={{ transform: ' translate3d(0px, 0px, 0px)' }}
             ></image>
@@ -124,14 +129,15 @@ function Home() {
         </svg>
       </div>
 
-      <div className="image"></div>
-      <h1>
-        Hi, I'm <span>Imran</span> {`;)`}
-      </h1>
-      <p>
-        I'm a FullStack Web developer and designer based in Bangalore, India.
-      </p>
-      <p>I make web applications, usually with React and NodeJS.</p>
+      <div className="description">
+        <h1>
+          Hi, I'm <span>Imran</span> {`;)`}
+        </h1>
+        <p>
+          I'm a FullStack Web developer and designer based in Bangalore, India.
+        </p>
+        <p>I make web applications, usually with React and NodeJS.</p>
+      </div>
     </div>
   );
 }

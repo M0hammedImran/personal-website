@@ -2,29 +2,61 @@
   padding-top: 8vh;
   height: 100vh;
   padding: 8vh 0 0 0;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
-#Home > h1 {
+#Home .description h1 {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 500;
 }
-#Home > h1 > span {
+
+#Home .description h1 span {
   font-family: 'Amiri';
   font-weight: 700;
   font-style: italic;
 }
-#Home > p {
+
+#Home .description p {
   color: #4b4b4b;
   text-align: center;
   font-size: 1.3rem;
 }
+
 .svg-container {
   margin: 0 auto;
+  margin-top: -2rem;
   height: 512px;
   width: 512px;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.sga-homepage-hero-collage {
+  width: 100%;
+}
+
+.imran,
+.charcoal {
+  animation: circleAnimate 1s;
+  transition: all 1s ease-in;
+}
+
+path,
+polygon {
+  animation: circleAnimate 1.6s;
+}
+
+@keyframes circleAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
