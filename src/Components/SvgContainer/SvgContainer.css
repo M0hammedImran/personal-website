@@ -15,16 +15,16 @@
 
 .imran,
 .charcoal {
-  animation: circleAnimate 1s;
+  animation: fadeinAnimation 1s;
   transition: all 1s ease-in;
 }
 
 path,
 polygon {
-  animation: circleAnimate 1.6s;
+  animation: fadeinAnimation 1.6s;
 }
 
-@keyframes circleAnimate {
+@keyframes fadeinAnimation {
   from {
     opacity: 0;
   }

@@ -25,6 +25,11 @@ function Navbar() {
             </a>
           </li>
           <li>
+            <a href="#Skills" data-text="Skills">
+              Skills
+            </a>
+          </li>
+          <li>
             <a href="#Contact" data-text="Contact">
               Contact
             </a>

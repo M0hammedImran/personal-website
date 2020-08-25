@@ -6,8 +6,17 @@
 #Contact {
   padding-top: 8vh;
   height: 100vh;
-  padding: 8vh 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  color: black;
 }
