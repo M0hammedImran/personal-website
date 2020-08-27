@@ -24,3 +24,29 @@
   text-align: center;
   font-size: 1.3rem;
 }
+
+.resumeLink {
+  height: 40px;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.resumeLink > div {
+  height: 35px;
+  width: 120px;
+  background-color: #39a6ff;
+  border-radius: 5px;
+  display: grid;
+  place-content: center;
+}
+.resumeLink > div > a {
+  height: 35px;
+  width: 120px;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}

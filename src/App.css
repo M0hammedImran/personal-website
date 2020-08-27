@@ -9,36 +9,3 @@
   margin: 0 auto;
   width: 80%;
 }
-div.circle_container > a {
-  text-decoration: none;
-  color: black;
-}
-div.circle_container {
-  height: 25vh;
-  width: 50px;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 1em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  user-select: none;
-  text-align: center;
-}
-
-div.circle_container a div {
-  height: 30px;
-  width: 30px;
-  /* background-color: rgb(0, 0, 0); */
-  cursor: pointer;
-}
-div.circle_container > a {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-/* .actionButton__svg {
-  fill: rgb(255, 255, 255);
-} */
