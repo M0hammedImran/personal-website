@@ -8,7 +8,7 @@ import Contact from './Components/Contact/Contact';
 import Resume from './Components/Resume/Resume';
 import MobileButtons from './Components/MobileButtons/MobileButtons';
 
-import './App.css';
+import './App.scss';
 
 const App = () => {
   return (

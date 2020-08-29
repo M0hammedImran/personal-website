@@ -1,7 +1,7 @@
 import React from 'react';
 import MapGL, { Marker } from 'react-map-gl';
 
-import './Map.css';
+import './Map.scss';
 
 import { ReactComponent as MarkerIcon } from '../../assets/svg_icons/map_marker_icon.svg';
 import { ReactComponent as ReCenterIcon } from '../../assets/svg_icons/recenter_icon.svg';

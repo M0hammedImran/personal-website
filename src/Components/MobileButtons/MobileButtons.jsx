@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { ReactComponent as HomeSvg } from '../../assets/svg_icons/home_icon.svg';
-import { ReactComponent as ProjectsSvg } from '../../assets/svg_icons/projects_icon.svg';
-import { ReactComponent as SkillsSvg } from '../../assets/svg_icons/globe_icon.svg';
-import { ReactComponent as ContactSvg } from '../../assets/svg_icons/contacts_icon.svg';
+import { ReactComponent as HomeSvg } from '../../assets/svg_icons/Home_icon.svg';
+import { ReactComponent as ProjectsSvg } from '../../assets/svg_icons/Projects_icon.svg';
+import { ReactComponent as SkillsSvg } from '../../assets/svg_icons/Hammer_icon.svg';
+import { ReactComponent as ContactSvg } from '../../assets/svg_icons/Phone_icon.svg';
 
-import './MobileButtons.css';
+import './MobileButtons.scss';
 
 const MobileButtons = () => {
   return (

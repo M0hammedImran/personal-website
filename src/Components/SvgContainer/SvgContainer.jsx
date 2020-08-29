@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import './SvgContainer.css';
+import './SvgContainer.scss';
 
 function SvgContainer() {
   const [imranValues, setImranValues] = useState({ x: 350, y: 140 });

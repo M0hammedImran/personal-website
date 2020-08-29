@@ -2,7 +2,7 @@ import React from 'react';
 
 import SvgContainer from '../SvgContainer/SvgContainer';
 
-import './Home.css';
+import './Home.scss';
 
 function Home() {
   return (

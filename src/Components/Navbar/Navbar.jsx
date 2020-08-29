@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ReactComponent as NavbarLogo } from '../../assets/svg_icons/Navbar_logo.svg';
 
-import './Navbar.css';
+import './Navbar.scss';
 
 function Navbar() {
   return (
