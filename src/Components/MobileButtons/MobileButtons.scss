@@ -26,9 +26,6 @@ div.circle_container > a {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
-  .body {
-    display: none;
-  }
   div.circle_container {
     display: flex;
     justify-content: space-around;

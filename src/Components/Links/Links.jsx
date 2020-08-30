@@ -2,14 +2,13 @@ import React from 'react';
 import './links.scss';
 
 function Links({ Link, Name, BrandSvg }) {
-  console.log(BrandSvg);
   return (
-    <div id="links">
-      <a href={Link} target="_blank" rel="noopener  noreferrer">
+    <a href={Link} id="target" target="_blank" rel="noopener  noreferrer">
+      <div id="links">
         <BrandSvg />
-      </a>
-      <p>{Name}</p>
-    </div>
+        <p>{Name}</p>
+      </div>
+    </a>
   );
 }
 

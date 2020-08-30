@@ -1,9 +1,13 @@
-#links {
-  height: 1.5rem;
-  width: 1.5rem;
+a {
+  text-decoration: none;
+  color: black;
+  div#links {
+    height: 3rem;
+    width: 1.5rem;
 
-  p {
-    transform: translateX(-50%);
-    width: 100%;
+    p {
+      transform: translateX(-30%);
+      width: min-content;
+    }
   }
 }
