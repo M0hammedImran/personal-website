@@ -14,15 +14,15 @@ function Contact() {
   };
   return (
     <div id="Contact">
-      <h1>Contact</h1>
-      <form onSubmit={onSubmitHandler}>
+      <form className="Contact__form" onSubmit={onSubmitHandler}>
+        <h1>Contact</h1>
         <div className="name__container">
           <label htmlFor="name">Name</label>
-          <input id="name" type="text" />
+          <input autoComplete="off" id="name" type="text" />
         </div>
         <div className="email__container">
           <label htmlFor="email">Email</label>
-          <input type="text" id="email" />
+          <input autoComplete="nope" type="text" id="email" />
         </div>
         <div className="message__container">
           <label htmlFor="message">Message</label>
