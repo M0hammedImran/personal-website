@@ -32,29 +32,36 @@ function Projects() {
           return (
             <div className="container__project">
               <h2>{project.name}</h2>
-              <p className="sourceCode">
-                Source Code:{' '}
+              <div className="sourceCode">
+                <p className="sourceCode__p">Source Code:</p>
                 <a
+                  className="sourceCode__a"
                   href={project.sourceCode}
                   target="_blank"
                   rel="noopener  noreferrer"
                 >
                   {project.sourceCode}
                 </a>
-              </p>
+              </div>
               {project.workingSite ? (
-                <p className="site">
-                  Working Site:{' '}
+                <div className="site">
+                  <p className="site__p">Working Site:</p>
                   <a
+                    className="site__a"
                     href={project.workingSite}
                     target="_blank"
                     rel="noopener  noreferrer"
                   >
                     {project.workingSite}
                   </a>
-                </p>
+                </div>
               ) : (
-                ''
+                <div className="site">
+                  <p className="site__p">
+                    Working Site: <br />
+                    Unavailable
+                  </p>
+                </div>
               )}
             </div>
           );

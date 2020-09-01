@@ -25,5 +25,18 @@
   }
   #Projects {
     font-size: 0.7em;
+    div.Projects__container {
+      display: flex;
+      flex-direction: column;
+      grid-gap: none;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      div.container__project {
+        padding: 1rem;
+        height: 25%;
+        width: 100%;
+      }
+    }
   }
 }
