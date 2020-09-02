@@ -1,11 +1,8 @@
 import React from 'react';
-// import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-// import Resume from '../Resume/Resume';
 
 import './Home.scss';
 
 function Home(props) {
-  console.log(props);
   return (
     <div id="Home">
       <div className="description">
@@ -22,11 +19,6 @@ function Home(props) {
         </p>
       </div>
       {props.children}
-      {/* <div className="resumeLink">
-        <div>
-          <a href="/Resume">My Resume</a>
-        </div>
-      </div> */}
     </div>
   );
 }

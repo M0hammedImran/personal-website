@@ -17,8 +17,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+  scrollbar-color: #161616 #a5a5a5;
+  scrollbar-width: none;
 }
 
+body::-moz-scrollbar- {
+  width: 0.71em;
+}
 body::-webkit-scrollbar {
   width: 0.71em;
 }
