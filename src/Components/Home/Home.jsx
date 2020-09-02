@@ -1,20 +1,13 @@
 import React from 'react';
-
-// import SvgContainer from '../SvgContainer/SvgContainer';
+// import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+// import Resume from '../Resume/Resume';
 
 import './Home.scss';
 
-function Home({ height, setHeight }) {
+function Home(props) {
+  console.log(props);
   return (
-    <div
-      id="Home"
-      style={
-        height.component === 'Home'
-          ? { height: height.final }
-          : { height: height.initial, display: 'none' }
-      }
-    >
-      {/* <SvgContainer /> */}
+    <div id="Home">
       <div className="description">
         <h1>
           Hi, I'm <span>Imran</span> {`;)`}
@@ -28,16 +21,12 @@ function Home({ height, setHeight }) {
           <span>NodeJS.</span>
         </p>
       </div>
-      <div className="resumeLink">
+      {props.children}
+      {/* <div className="resumeLink">
         <div>
-          <a
-            href="#Resume"
-            onClick={() => setHeight({ ...height, component: 'Resume' })}
-          >
-            My Resume
-          </a>
+          <a href="/Resume">My Resume</a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

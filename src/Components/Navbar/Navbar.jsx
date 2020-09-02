@@ -1,45 +1,44 @@
 import React from 'react';
 
 import { ReactComponent as NavbarLogo } from '../../assets/svg_icons/Navbar_logo.svg';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import './Navbar.scss';
 
-function Navbar({ setHeight }) {
-  const clickHandler = (e) => {
-    setHeight({ ...setHeight, component: e.target.dataset.remove });
-    console.log(e.target.dataset.remove);
-  };
+function Navbar() {
   return (
     <div className="navbar_container">
-      <div className="logo">
-        <a href="#Home" data-text="Home">
-          <NavbarLogo className="svg_logo" alt="Logo" />
-        </a>
-      </div>
-      <div className="nav_links">
-        <ul>
-          <li onClick={clickHandler}>
-            <a href="#Home" data-remove="Home">
-              Home
-            </a>
-          </li>
-          <li onClick={clickHandler}>
-            <a href="#Projects" data-remove="Projects">
-              Projects
-            </a>
-          </li>
-          <li onClick={clickHandler}>
-            <a href="#Skills" data-remove="Skills">
-              Skills
-            </a>
-          </li>
-          <li onClick={clickHandler}>
-            <a href="#Contact" data-remove="Contact">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
+      <Router>
+        <div className="logo">
+          <Link to="/" data-text="Home">
+            <NavbarLogo className="svg_logo" alt="Logo" />
+          </Link>
+        </div>
+        <div className="nav_links">
+          <ul>
+            <li>
+              <Link to="/" data-remove="Home">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/Projects" data-remove="Projects">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="/Skills" data-remove="Skills">
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link to="/Contact" data-remove="Contact">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </Router>
     </div>
   );
 }

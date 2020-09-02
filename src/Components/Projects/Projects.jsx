@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Projects.scss';
 
-function Projects({ height }) {
+function Projects() {
   const [projects] = useState([
     {
       name: 'Covid-19 Tracker',
@@ -26,14 +26,7 @@ function Projects({ height }) {
     },
   ]);
   return (
-    <div
-      id="Projects"
-      style={
-        height.component === 'Projects'
-          ? { height: height.final }
-          : { height: height.initial, display: 'none' }
-      }
-    >
+    <div id="Projects">
       <div className="Projects__container">
         {projects.map((project, index) => {
           return (
