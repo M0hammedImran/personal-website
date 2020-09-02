@@ -1,8 +1,10 @@
 #Resume {
   padding-top: 8vh;
   height: 100vh;
-  /* display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column; */
+  // display: flex;
+  // justify-content: center;
+  // align-content: center;
+  // flex-direction: column;
+  display: grid;
+  place-content: center;
 }

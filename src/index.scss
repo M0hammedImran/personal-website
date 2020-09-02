@@ -16,7 +16,7 @@ body {
   font-family: $fontValue;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 500vh;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #root {
-  height: 500vh;
+  height: 100vh;
   width: 100%;
 }
 

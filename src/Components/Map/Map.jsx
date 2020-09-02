@@ -56,3 +56,6 @@ export default Map;
 For interactive map use this 👇 in ReactMapGL
 onViewportChange={(nextViewport) => setViewport(nextViewport)}
 */
+
+// * myLocation: [12.957651, 77.618056]
+// ? Mapbox Style: "mapbox://styles/mohammedimran/ckdr0oy7y0is919nlc28zs1kz"

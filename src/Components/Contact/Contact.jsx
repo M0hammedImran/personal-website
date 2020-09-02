@@ -7,13 +7,20 @@ import { ReactComponent as HomeSvg } from '../../assets/svg_icons/GitHub_icon.sv
 import { ReactComponent as SkillsSvg } from '../../assets/svg_icons/Twitter_icon.svg';
 import { ReactComponent as ContactSvg } from '../../assets/svg_icons/Instagram_icon.svg';
 
-function Contact() {
+function Contact({ height }) {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     console.log('Hello');
   };
   return (
-    <div id="Contact">
+    <div
+      id="Contact"
+      style={
+        height.component === 'Contact'
+          ? { height: height.final }
+          : { height: height.initial, display: 'none' }
+      }
+    >
       <form className="Contact__form" onSubmit={onSubmitHandler}>
         <h1>Contact</h1>
         <div className="name__container">

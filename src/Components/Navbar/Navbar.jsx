@@ -4,7 +4,11 @@ import { ReactComponent as NavbarLogo } from '../../assets/svg_icons/Navbar_logo
 
 import './Navbar.scss';
 
-function Navbar() {
+function Navbar({ setHeight }) {
+  const clickHandler = (e) => {
+    setHeight({ ...setHeight, component: e.target.dataset.remove });
+    console.log(e.target.dataset.remove);
+  };
   return (
     <div className="navbar_container">
       <div className="logo">
@@ -14,23 +18,23 @@ function Navbar() {
       </div>
       <div className="nav_links">
         <ul>
-          <li>
-            <a href="#Home" data-text="Home">
+          <li onClick={clickHandler}>
+            <a href="#Home" data-remove="Home">
               Home
             </a>
           </li>
-          <li>
-            <a href="#Projects" data-text="Projects">
+          <li onClick={clickHandler}>
+            <a href="#Projects" data-remove="Projects">
               Projects
             </a>
           </li>
-          <li>
-            <a href="#Skills" data-text="Skills">
+          <li onClick={clickHandler}>
+            <a href="#Skills" data-remove="Skills">
               Skills
             </a>
           </li>
-          <li>
-            <a href="#Contact" data-text="Contact">
+          <li onClick={clickHandler}>
+            <a href="#Contact" data-remove="Contact">
               Contact
             </a>
           </li>
