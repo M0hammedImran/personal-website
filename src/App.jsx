@@ -6,6 +6,7 @@ import Projects from './Components/Projects/Projects';
 import Skills from './Components/Skills/Skills';
 import Contact from './Components/Contact/Contact';
 import Resume from './Components/Resume/Resume';
+import My404Component from './Components/My404Component/My404Component';
 import { ReactComponent as NavbarLogo } from './assets/svg_icons/Navbar_logo.svg';
 
 import './App.scss';
@@ -48,18 +49,12 @@ const App = () => {
                 </div>
               </Home>
             </Route>
-            <Route path="/Projects">
-              <Projects />
-            </Route>
-            <Route path="/Skills">
-              <Skills />
-            </Route>
-            <Route path="/Contact">
-              <Contact />
-            </Route>
-            <Route path="/Resume">
-              <Resume />
-            </Route>
+            <Route path="/Projects" component={Projects} />
+            <Route path="/Skills" component={Skills} />
+            <Route path="/Contact" component={Contact} />
+            <Route path="/Resume" component={Resume} />
+            <Route path="*" exact component={My404Component} />
+            {/* <Redirect from="*" to="/404" /> */}
           </Switch>
         </div>
       </Router>
