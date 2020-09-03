@@ -1,11 +1,29 @@
 {
   "hosting": {
-    "site":"mohammedimran",
+    "site": "mohammedimran",
     "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "*",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/Projects/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/Contacts/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/Skills/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/Resume/**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
