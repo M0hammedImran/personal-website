@@ -21,7 +21,7 @@ const App = () => {
               <NavbarLogo className="svg_logo" alt="Logo" />
             </Link>
           </div>
-          <div className="nav_links">
+          <nav className="nav_links">
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -36,7 +36,7 @@ const App = () => {
                 <Link to="/Contact">Contact</Link>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
         <div className="body">
           <Switch>
@@ -54,7 +54,6 @@ const App = () => {
             <Route path="/Contact" component={Contact} />
             <Route path="/Resume" component={Resume} />
             <Route path="*" exact component={My404Component} />
-            {/* <Redirect from="*" to="/404" /> */}
           </Switch>
         </div>
       </Router>
