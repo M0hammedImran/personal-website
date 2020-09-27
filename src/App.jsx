@@ -1,5 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink,
+} from 'react-router-dom';
 
 import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects';
@@ -9,35 +15,46 @@ import Resume from './Components/Resume/Resume';
 import My404Component from './Components/My404Component/My404Component';
 import { ReactComponent as NavbarLogo } from './assets/svg_icons/Navbar_logo.svg';
 
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
+
 import './App.scss';
 
 const App = () => {
   return (
     <div className="App">
       <Router>
-        <div className="navbar_container">
-          <div className="logo">
+        <Navbar bg="dark" variant="dark" expand="lg">
+          <Navbar.Brand>
             <Link to="/" data-text="Home">
               <NavbarLogo className="svg_logo" alt="Logo" />
             </Link>
-          </div>
-          <nav className="nav_links">
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/Projects">Projects</Link>
-              </li>
-              <li>
-                <Link to="/Skills">Skills</Link>
-              </li>
-              <li>
-                <Link to="/Contact">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="justify-content-end" activeKey="/">
+              <NavItem>
+                <Nav.Link as={NavLink} to="/" exact={true}>
+                  Home
+                </Nav.Link>
+              </NavItem>
+              <NavItem>
+                <Nav.Link as={NavLink} to="/Projects">
+                  Projects
+                </Nav.Link>
+              </NavItem>
+              <NavItem>
+                <Nav.Link as={NavLink} to="/Skills">
+                  Skills
+                </Nav.Link>
+              </NavItem>
+              <NavItem>
+                <Nav.Link as={NavLink} to="/Contact">
+                  Contact
+                </Nav.Link>
+              </NavItem>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
         <div className="body">
           <Switch>
             <Route exact path="/">
