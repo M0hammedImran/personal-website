@@ -55,24 +55,27 @@ const App = () => {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <div className="body">
-          <Switch>
-            <Route exact path="/">
-              <Home>
-                <div className="resumeLink">
-                  <div>
-                    <Link to="/Resume">My Resume</Link>
-                  </div>
+        <Switch>
+          <Route exact path="/">
+            <Home>
+              <div className="resumeLink">
+                <div>
+                  <Link to="/Resume">My Resume</Link>
                 </div>
-              </Home>
-            </Route>
-            <Route path="/Projects" component={Projects} />
-            <Route path="/Skills" component={Skills} />
-            <Route path="/Contact" component={Contact} />
-            <Route path="/Resume" component={Resume} />
-            <Route path="*" exact component={My404Component} />
-          </Switch>
-        </div>
+              </div>
+              <div className="projectLink">
+                <div>
+                  <Link to="/Projects">My Projects</Link>
+                </div>
+              </div>
+            </Home>
+          </Route>
+          <Route path="/Projects" component={Projects} />
+          <Route path="/Skills" component={Skills} />
+          <Route path="/Contact" component={Contact} />
+          <Route path="/Resume" component={Resume} />
+          <Route path="*" exact component={My404Component} />
+        </Switch>
       </Router>
     </div>
   );

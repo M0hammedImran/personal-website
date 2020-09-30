@@ -1,6 +1,4 @@
-$fontValue: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+@import './assets/scss/variables';
 
 * {
   margin: 0;
@@ -35,11 +33,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: rgb(37, 37, 37);
   outline: 2px solid rgb(28, 101, 173);
-}
-
-#root {
-  height: 100vh;
-  width: 100%;
 }
 
 code {

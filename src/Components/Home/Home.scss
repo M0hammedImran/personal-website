@@ -1,6 +1,7 @@
+@import '../../assets/scss/variables';
+
 #Home {
-  padding-top: 8vh;
-  height: 100vh;
+  height: calc(100vh - #{$navbarHeight});
   display: flex;
   justify-content: center;
   align-content: center;
@@ -28,22 +29,27 @@
   }
 }
 
-.resumeLink {
+.resumeLink,
+.projectLink {
   height: 40px;
   width: 100%;
   display: grid;
   place-content: center;
   margin-top: 2rem;
 }
-.resumeLink > div {
-  height: 35px;
-  width: 120px;
+.resumeLink > div,
+.projectLink > div {
+  height: 45px;
+  width: 140px;
   background-color: #39a6ff;
-  border-radius: 5px;
+  // border-radius: 5px;
+  padding: 18px;
   display: grid;
   place-content: center;
 }
-.resumeLink > div > a {
+
+.resumeLink > div > a,
+.projectLink > div > a {
   height: 35px;
   width: 120px;
   text-decoration: none;

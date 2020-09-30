@@ -14,41 +14,55 @@ function Contact() {
   };
   return (
     <div id="Contact">
-      <form className="Contact__form" onSubmit={onSubmitHandler}>
+      <form className="container-fluid" onSubmit={onSubmitHandler}>
         <h1>Contact</h1>
-        <div className="name__container">
-          <label htmlFor="name">Name</label>
-          <input autoComplete="off" id="name" type="text" />
-        </div>
-        <div className="email__container">
-          <label htmlFor="email">Email</label>
-          <input autoComplete="nope" type="text" id="email" />
-        </div>
-        <div className="message__container">
-          <label htmlFor="message">Message</label>
-          <textarea type="text" id="message" cols="80" rows="10"></textarea>
-        </div>
-        <div className="btn__container">
-          <button type="submit">Submit</button>
-        </div>
-        <div className="links">
-          <Links
-            Link="https://github.com/m0hammedimran"
-            BrandSvg={HomeSvg}
-            Name="GitHub"
-          />
-          <Links
-            Link="https://instagram.com/m0hd_imran"
-            BrandSvg={ContactSvg}
-            Name="Instagram"
-          />
-          <Links
-            BrandSvg={SkillsSvg}
-            Link="https://twitter.com/Md_Imran_1999"
-            Name="Twitter"
+        <div className="form-group">
+          <label htmlFor="name">Your Name</label>
+          <input
+            type="text"
+            className="form-control border border-dark"
+            id="name"
           />
         </div>
+        <div className="form-group">
+          <label htmlFor="InputEmail">Email address</label>
+          <input
+            type="email"
+            className="form-control border border-dark"
+            id="InputEmail"
+            aria-describedby="emailHelp"
+          />
+          <small id="emailHelp" className="form-text text-muted">
+            We'll never share your email with anyone else.
+          </small>
+        </div>
+        <div className="input-group">
+          <textarea
+            class="form-control border border-dark"
+            aria-label="With textarea"
+          ></textarea>
+        </div>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
       </form>
+      <div className="links">
+        <Links
+          Link="https://github.com/m0hammedimran"
+          BrandSvg={HomeSvg}
+          Name="GitHub"
+        />
+        <Links
+          Link="https://instagram.com/m0hammedimran"
+          BrandSvg={ContactSvg}
+          Name="Instagram"
+        />
+        <Links
+          BrandSvg={SkillsSvg}
+          Link="https://twitter.com/Md_Imran_1999"
+          Name="Twitter"
+        />
+      </div>
     </div>
   );
 }
